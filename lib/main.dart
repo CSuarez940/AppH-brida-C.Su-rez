@@ -25,7 +25,32 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       home: const MyHomePage(title: 'Vinilo Star'),
-      
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        child: Image.network("https://cadenaser00.epimg.net/ser/imagenes/2019/06/05/cultura/1559731009_040599_1559732557_sumario_normal.jpg"),
+        
+        child: Text(
+          '¡Bienvenido!',
+         style: TextStyle(
+           fontSize:
+         )
+
+      body: Container(
+        padding: EdgeInsets.all(10.0),
+        child: Image.network("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/09/primera-vez-40-anos-vinilos-ya-venden-cd-2063899.jpg"),
+
+        padding: EdgeInsets.all(10.0),
+        child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyxc29hLtFpzErERq4TyV03U09xPqSyr1Fg&usqp=CAU"),
+
+         padding: EdgeInsets.all(10.0),
+         child: Text(
+          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum erat eget pharetra viverra. Nunc sed tempor purus. Morbi tincidunt dui vitae vehicula sagittis. Suspendisse potenti. Phasellus congue condimentum sapien a fermentum. Fusce sit amet imperdiet ante, ut rutrum mauris. Curabitur volutpat feugiat tellus. Phasellus lacus est, malesuada sed purus eu, hendrerit laoreet odio. Donec posuere gravida efficitur. Cras accumsan eros quis sapien dignissim, non iaculis lectus rutrum. ',
+         style: TextStyle(
+           fontSize:
+         
+         )   
+         
+         
     );
   }
 }
@@ -76,8 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Container(
-        child: Image.network("https://www.google.cl/url?sa=i&url=https%3A%2F%2Fcadenaser.com%2Fser%2F2019%2F06%2F05%2Fcultura%2F1559731009_040599.html&psig=AOvVaw2pt5bW4B7V4LMSptS4hvC4&ust=1634266668256000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCIDwq_TzyPMCFQAAAAAdAAAAABAJ"),
+      body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -98,9 +122,8 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              '¡Bienvenido!',
+              'Ven a visitarnos',
             ),
-            
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
@@ -108,7 +131,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
