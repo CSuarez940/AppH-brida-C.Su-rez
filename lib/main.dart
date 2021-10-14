@@ -77,7 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Container(
-        child: Image.network("https://www.google.cl/url?sa=i&url=https%3A%2F%2Fcadenaser.com%2Fser%2F2019%2F06%2F05%2Fcultura%2F1559731009_040599.html&psig=AOvVaw2pt5bW4B7V4LMSptS4hvC4&ust=1634266668256000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCIDwq_TzyPMCFQAAAAAdAAAAABAJ")
+        child: Image.network("https://www.google.cl/url?sa=i&url=https%3A%2F%2Fcadenaser.com%2Fser%2F2019%2F06%2F05%2Fcultura%2F1559731009_040599.html&psig=AOvVaw2pt5bW4B7V4LMSptS4hvC4&ust=1634266668256000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCIDwq_TzyPMCFQAAAAAdAAAAABAJ"),
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Column(
@@ -100,6 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
             const Text(
               '¡Bienvenido!',
             ),
+            
             Text(
               '$_counter',
               style: Theme.of(context).textTheme.headline4,
