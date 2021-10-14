@@ -42,15 +42,18 @@ class MyApp extends StatelessWidget {
         padding: EdgeInsets.all(10.0),
         child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyxc29hLtFpzErERq4TyV03U09xPqSyr1Fg&usqp=CAU"),
 
-         padding: EdgeInsets.all(10.0),
+
          child: Text(
           'Texto descriptivo',
          style: TextStyle(
            fontSize:
          
-         )   
-         
-         
+           
+         )
+         )
+        )
+      )
+    )    
     );
   }
 }
