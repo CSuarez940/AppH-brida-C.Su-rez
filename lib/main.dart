@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
 
          padding: EdgeInsets.all(10.0),
          child: Text(
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dictum erat eget pharetra viverra. Nunc sed tempor purus. Morbi tincidunt dui vitae vehicula sagittis. Suspendisse potenti. Phasellus congue condimentum sapien a fermentum. Fusce sit amet imperdiet ante, ut rutrum mauris. Curabitur volutpat feugiat tellus. Phasellus lacus est, malesuada sed purus eu, hendrerit laoreet odio. Donec posuere gravida efficitur. Cras accumsan eros quis sapien dignissim, non iaculis lectus rutrum. ',
+          'Texto descriptivo',
          style: TextStyle(
            fontSize:
          
@@ -131,11 +131,10 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      body: Container(
+        padding: EdgeInsets.all(20.0),
+        child: Image.network("https://www.rockandpop.cl/wp-content/uploads/2019/08/Tienda-de-Vinilos.jpg"),
+      )
     );
   }
 }
