@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Tienda de Vinilos',
+      title: 'Flutter Demo',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -22,38 +22,9 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.grey,
+        primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Vinilo Star'),
-      body: Container(
-        padding: EdgeInsets.all(20.0),
-        child: Image.network("https://cadenaser00.epimg.net/ser/imagenes/2019/06/05/cultura/1559731009_040599_1559732557_sumario_normal.jpg"),
-        
-        child: Text(
-          '¡Bienvenido!',
-         style: TextStyle(
-           fontSize:
-         )
-
-      body: Container(
-        padding: EdgeInsets.all(10.0),
-        child: Image.network("https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2020/09/primera-vez-40-anos-vinilos-ya-venden-cd-2063899.jpg"),
-
-        padding: EdgeInsets.all(10.0),
-        child: Image.network("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhyxc29hLtFpzErERq4TyV03U09xPqSyr1Fg&usqp=CAU"),
-
-
-         child: Text(
-          'Texto descriptivo',
-         style: TextStyle(
-           fontSize:
-         
-           
-         )
-         )
-        )
-      )
-    )    
+      home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }
@@ -125,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Ven a visitarnos, dirección: xxxxx',
+              'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
@@ -134,10 +105,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      body: Container(
-        padding: EdgeInsets.all(20.0),
-        child: Image.network("https://www.rockandpop.cl/wp-content/uploads/2019/08/Tienda-de-Vinilos.jpg"),
-      )
+      floatingActionButton: FloatingActionButton(
+        onPressed: _incrementCounter,
+        tooltip: 'Increment',
+        child: const Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
