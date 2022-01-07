@@ -1,32 +1,18 @@
+library mi_proyecto;
+
+import 'dart:html';
+
 import 'package:flutter/material.dart';
 
+part 'inicio.dart';
+part 'servicios.dart';
+part 'catalogo.dart';
+
+
 void main() {
-  runApp(const MyApp());
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-      ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
-    );
-  }
+  runApp(const MaterialApp(
+    home: PrimeraPantalla(),
+  ));
 }
 
 class MyHomePage extends StatefulWidget {
@@ -95,13 +81,17 @@ class _MyHomePageState extends State<MyHomePage> {
           // horizontal).
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            Image.network(
+                'https://static.eldiario.es/clip/5e8b5b7c-ee1f-479f-adf6-e35ca7bfa2d1_twitter-aspect-ratio_default_0.jpg'),
             const Text(
-              'You have pushed the button this many times:',
+              '¡Bienvenido!',
             ),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+            Image.network(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZEqBy8dvRiw8t5rivuYON57f_LHntBTXHK-km457Jysww-fJ9ltrwG6sQNUqRgi9q1zo&usqp=CAU'),
+            Image.network(
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1_LmcrkD4sz5-h_6QxS0xKvzpN86mJXbZDQ&usqp=CAU'),
+            const Text(
+                'Somos una tienda con el propósito de recordar y traer nuevamente el pasado al presente ¿Cómo? Con la música'),
           ],
         ),
       ),
